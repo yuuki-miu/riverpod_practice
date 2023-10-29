@@ -5,6 +5,6 @@ class MyHomePageStateNotifier extends StateNotifier<MyHomePageState> {
   MyHomePageStateNotifier() : super(const MyHomePageState());
 
   void increment() {
-    state = state.copyWith(state.counter + 1);
+    state = state.copyWith(counter: state.counter + 1);
   }
 }

@@ -1,7 +1,12 @@
-class MyHomePageState {
-  const MyHomePageState({this.counter = 0});
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:flutter/foundation.dart';
 
-  final counter;
+part 'my_home_state.freezed.dart';
+//part 'my_home_state.g.dart';
 
-  MyHomePageState copyWith(int counter) => MyHomePageState(counter: counter);
+@freezed
+class MyHomePageState with _$MyHomePageState {
+  const factory MyHomePageState({
+    @Default(0) int counter,
+  }) = _MyHomePageState;
 }
