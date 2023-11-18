@@ -28,17 +28,3 @@ class MyApp extends StatelessWidget {
 final myHomePageProvider =
     StateNotifierProvider<MyHomePageStateNotifier, MyHomePageState>(
         (ref) => MyHomePageStateNotifier());
-
-// class MyHomePageState extends ChangeNotifier {
-//   int counter = 0;
-//
-//   void increment() {
-//     counter++;
-//     //setState的なやつ
-//     notifyListeners();
-//   }
-//
-//   void reBuild() {
-//     notifyListeners();
-//   }
-// }
